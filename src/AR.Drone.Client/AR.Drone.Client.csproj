@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{56DBF8E3-28A6-4C27-BA0A-B32352608F44}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AR.Drone.Client</RootNamespace>
+    <AssemblyName>AR.Drone.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Command\RefMode.cs" />
+    <Compile Include="Video\VideoFrameTypeConverter.cs" />
+    <Compile Include="Command\CalibrateCommand.cs" />
+    <Compile Include="Command\ConfigCommand.cs" />
+    <Compile Include="Command\ConfigIdsCommand.cs" />
+    <Compile Include="Command\ControlCommand.cs" />
+    <Compile Include="Command\ControlMode.cs" />
+    <Compile Include="Command\Device.cs" />
+    <Compile Include="Command\FlatTrimCommand.cs" />
+    <Compile Include="Command\ProgressiveCommand.cs" />
+    <Compile Include="Command\RefCommand.cs" />
+    <Compile Include="Configuration\NavdataOptions.cs" />
+    <Compile Include="Configuration\SectionBase.cs" />
+    <Compile Include="Configuration\FlightAnimation.cs" />
+    <Compile Include="Configuration\VideoBitrateControlMode.cs" />
+    <Compile Include="Configuration\VideoCodecType.cs" />
+    <Compile Include="Configuration\VideoChannelType.cs" />
+    <Compile Include="Video\Native\parrot_video_encapsulation_t.cs" />
+    <Compile Include="Video\Native\parrot_video_encapsulation_frametypes_t.cs" />
+    <Compile Include="Command\AtCommand.cs" />
+    <Compile Include="Command\ComWdgCommand.cs" />
+    <Compile Include="StateRequest.cs" />
+    <Compile Include="Command\CommandSender.cs" />
+    <Compile Include="DroneClient.cs" />
+    <Compile Include="Navigation\NavdataAcquisition.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Video\VideoAcquisition.cs" />
+    <Compile Include="Command\ProgressWithMagnetoCommand.cs" />
+    <Compile Include="Command\FlightMode.cs" />
+    <Compile Include="NetworkConfiguration.cs" />
+    <Compile Include="Configuration\ConfigurationAcquisition.cs" />
+    <Compile Include="Configuration\Settings.cs" />
+    <Compile Include="Configuration\Sections.cs">
+      <DependentUpon>Sections.tt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Configuration\FlightAnimationType.cs" />
+    <Compile Include="Configuration\UserboxCommand.cs" />
+    <Compile Include="Configuration\UserboxCommandType.cs" />
+    <Compile Include="Configuration\LedAnimation.cs" />
+    <Compile Include="Configuration\LedAnimationType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AR.Drone.Data\AR.Drone.Data.csproj">
+      <Project>{7D1B0B10-82F9-413F-BEE9-0174753D93A1}</Project>
+      <Name>AR.Drone.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AR.Drone.Infrastructure\AR.Drone.Infrastructure.csproj">
+      <Project>{5BE68B3D-1112-464D-8C17-844E834BB3BA}</Project>
+      <Name>AR.Drone.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="Configuration\Sections.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Sections.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\FFmpeg.AutoGen.dll.config
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Video.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Video.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Data.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Infrastructure.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\FFmpeg.AutoGen.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Data.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\AR.Drone.Infrastructure.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\bin\Debug\FFmpeg.AutoGen.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\obj\Debug\AR.Drone.Video.csprojResolveAssemblyReference.cache
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\obj\Debug\AR.Drone.Video.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Video\obj\Debug\AR.Drone.Video.pdb

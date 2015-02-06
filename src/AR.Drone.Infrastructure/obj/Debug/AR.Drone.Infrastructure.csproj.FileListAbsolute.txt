@@ -1,0 +1,5 @@
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Infrastructure\bin\Debug\AR.Drone.Infrastructure.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Infrastructure\bin\Debug\AR.Drone.Infrastructure.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Infrastructure\obj\Debug\AR.Drone.Infrastructure.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Infrastructure\obj\Debug\AR.Drone.Infrastructure.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\AR.Drone.Infrastructure\obj\Debug\AR.Drone.Infrastructure.csprojResolveAssemblyReference.cache
