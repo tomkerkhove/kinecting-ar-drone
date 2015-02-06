@@ -13,7 +13,7 @@ Tutorial on how you can fly your **Parrot AR Drone** by using **Kinect for Windo
 
 ## What you will learn##
 
-### Part I - Basic UI, Kinect camera & voice recognition ###
+### Part I - Basic UI, Kinect camera & voice recognition ([Code](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Part_I)) 
 In part I we will integrate our Kinect into the template by **visualizing the camera** and setting up our **speech recognition**.
 
 - Integrate Kinect sensor in our application
@@ -23,7 +23,7 @@ In part I we will integrate our Kinect into the template by **visualizing the ca
 
 ![Result Pt. I](http://www.kinectingforwindows.com/wp-content/uploads/2013/11/part_I_result-1024x588.png)
 
-### Mayday, mayday! Ending the Kinecting AR Drone series. ###
+### Mayday, mayday! Ending the Kinecting AR Drone series. ([Code](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Final-Version)) 
 > Disclaimer – This application is not finished and needs additional work
 
 As you can read in my blog post ([link](http://www.kinectingforwindows.com/2014/08/07/mayday-mayday-ending-the-kinecting-ar-drone-series/)) I didn't had the time to finish this series but I'll open-source the code anyway.
@@ -65,6 +65,6 @@ The gestures are partially developed but not flying smoothly as I want it to be.
 In this tutorial we will use a template to avoid spending too much time on the interface.
 The template contains a basic WPF application where we will **visualize** our **Kinect** *(2)* & **drone** *(4)* cameras as well as the **state** of our **devices**. *(1-3)* In *sector 5* we will **log** some things like our recognized commands, etc.
 
-You can download the template in the [Template-branch](https://github.com/Kinecting-for-Windows/GIK-KinectingARDrone/tree/Template "Template-branch").
+You can download the template in the [Template-branch](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Template "Template-branch").
 
 ![AR Drone](http://www.kinectingforwindows.com/wp-content/uploads/2013/11/template-1024x497.png)
