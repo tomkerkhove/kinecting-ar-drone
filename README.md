@@ -2,8 +2,6 @@ Kinecting AR Drone
 ===========
 Tutorial on how you can fly your **Parrot AR Drone** by using **Kinect for Windows**. 
 
-![K4W logo](http://www.kinectingforwindows.com/wp-content/themes/twentyten/images/headers/logo.jpg)
-
 ## Prerequisites
 - Parrot AR Drone
 - Kinect for Windows
@@ -20,8 +18,6 @@ In part I we will integrate our Kinect into the template by **visualizing the ca
 - Visualize the Kinect-state
 - Visualize the camera
 - Add speech recognition
-
-![Result Pt. I](http://www.kinectingforwindows.com/wp-content/uploads/2013/11/part_I_result-1024x588.png)
 
 ### Mayday, mayday! Ending the Kinecting AR Drone series. ([Code](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Final-Version)) 
 > Disclaimer – This application is not finished and needs additional work
@@ -66,5 +62,3 @@ In this tutorial we will use a template to avoid spending too much time on the i
 The template contains a basic WPF application where we will **visualize** our **Kinect** *(2)* & **drone** *(4)* cameras as well as the **state** of our **devices**. *(1-3)* In *sector 5* we will **log** some things like our recognized commands, etc.
 
 You can download the template in the [Template-branch](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Template "Template-branch").
-
-![AR Drone](http://www.kinectingforwindows.com/wp-content/uploads/2013/11/template-1024x497.png)
