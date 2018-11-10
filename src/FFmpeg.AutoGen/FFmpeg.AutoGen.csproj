@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A536B02A-B0B1-4753-8328-17369EF09976}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FFmpeg.AutoGen</RootNamespace>
+    <AssemblyName>FFmpeg.AutoGen</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FFmpegInvoke.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="FFmpeg.AutoGen.dll.config">
+      <Gettext-ScanForTranslations>False</Gettext-ScanForTranslations>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FFmpeg\bin\windows\x64\avcodec-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\avdevice-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\avfilter-3.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\avformat-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\avutil-52.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\postproc-52.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\swresample-0.dll" />
+    <Content Include="FFmpeg\bin\windows\x64\swscale-2.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\avcodec-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\avdevice-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\avfilter-3.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\avformat-55.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\avutil-52.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\postproc-52.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\swresample-0.dll" />
+    <Content Include="FFmpeg\bin\windows\x86\swscale-2.dll" />
+    <Content Include="FFmpeg\include\libavcodec\avcodec.h" />
+    <Content Include="FFmpeg\include\libavcodec\avfft.h" />
+    <Content Include="FFmpeg\include\libavcodec\dxva2.h" />
+    <Content Include="FFmpeg\include\libavcodec\old_codec_ids.h" />
+    <Content Include="FFmpeg\include\libavcodec\vaapi.h" />
+    <Content Include="FFmpeg\include\libavcodec\vda.h" />
+    <Content Include="FFmpeg\include\libavcodec\vdpau.h" />
+    <Content Include="FFmpeg\include\libavcodec\version.h" />
+    <Content Include="FFmpeg\include\libavcodec\xvmc.h" />
+    <Content Include="FFmpeg\include\libavdevice\avdevice.h" />
+    <Content Include="FFmpeg\include\libavdevice\version.h" />
+    <Content Include="FFmpeg\include\libavfilter\asrc_abuffer.h" />
+    <Content Include="FFmpeg\include\libavfilter\avcodec.h" />
+    <Content Include="FFmpeg\include\libavfilter\avfilter.h" />
+    <Content Include="FFmpeg\include\libavfilter\avfiltergraph.h" />
+    <Content Include="FFmpeg\include\libavfilter\buffersink.h" />
+    <Content Include="FFmpeg\include\libavfilter\buffersrc.h" />
+    <Content Include="FFmpeg\include\libavfilter\version.h" />
+    <Content Include="FFmpeg\include\libavformat\avformat.h" />
+    <Content Include="FFmpeg\include\libavformat\avio.h" />
+    <Content Include="FFmpeg\include\libavformat\version.h" />
+    <Content Include="FFmpeg\include\libavutil\adler32.h" />
+    <Content Include="FFmpeg\include\libavutil\aes.h" />
+    <Content Include="FFmpeg\include\libavutil\attributes.h" />
+    <Content Include="FFmpeg\include\libavutil\audioconvert.h" />
+    <Content Include="FFmpeg\include\libavutil\audio_fifo.h" />
+    <Content Include="FFmpeg\include\libavutil\avassert.h" />
+    <Content Include="FFmpeg\include\libavutil\avconfig.h" />
+    <Content Include="FFmpeg\include\libavutil\avstring.h" />
+    <Content Include="FFmpeg\include\libavutil\avutil.h" />
+    <Content Include="FFmpeg\include\libavutil\base64.h" />
+    <Content Include="FFmpeg\include\libavutil\blowfish.h" />
+    <Content Include="FFmpeg\include\libavutil\bprint.h" />
+    <Content Include="FFmpeg\include\libavutil\bswap.h" />
+    <Content Include="FFmpeg\include\libavutil\buffer.h" />
+    <Content Include="FFmpeg\include\libavutil\channel_layout.h" />
+    <Content Include="FFmpeg\include\libavutil\common.h" />
+    <Content Include="FFmpeg\include\libavutil\cpu.h" />
+    <Content Include="FFmpeg\include\libavutil\crc.h" />
+    <Content Include="FFmpeg\include\libavutil\dict.h" />
+    <Content Include="FFmpeg\include\libavutil\error.h" />
+    <Content Include="FFmpeg\include\libavutil\eval.h" />
+    <Content Include="FFmpeg\include\libavutil\fifo.h" />
+    <Content Include="FFmpeg\include\libavutil\file.h" />
+    <Content Include="FFmpeg\include\libavutil\frame.h" />
+    <Content Include="FFmpeg\include\libavutil\hmac.h" />
+    <Content Include="FFmpeg\include\libavutil\imgutils.h" />
+    <Content Include="FFmpeg\include\libavutil\intfloat.h" />
+    <Content Include="FFmpeg\include\libavutil\intfloat_readwrite.h" />
+    <Content Include="FFmpeg\include\libavutil\intreadwrite.h" />
+    <Content Include="FFmpeg\include\libavutil\lfg.h" />
+    <Content Include="FFmpeg\include\libavutil\log.h" />
+    <Content Include="FFmpeg\include\libavutil\lzo.h" />
+    <Content Include="FFmpeg\include\libavutil\mathematics.h" />
+    <Content Include="FFmpeg\include\libavutil\md5.h" />
+    <Content Include="FFmpeg\include\libavutil\mem.h" />
+    <Content Include="FFmpeg\include\libavutil\murmur3.h" />
+    <Content Include="FFmpeg\include\libavutil\old_pix_fmts.h" />
+    <Content Include="FFmpeg\include\libavutil\opt.h" />
+    <Content Include="FFmpeg\include\libavutil\parseutils.h" />
+    <Content Include="FFmpeg\include\libavutil\pixdesc.h" />
+    <Content Include="FFmpeg\include\libavutil\pixfmt.h" />
+    <Content Include="FFmpeg\include\libavutil\random_seed.h" />
+    <Content Include="FFmpeg\include\libavutil\rational.h" />
+    <Content Include="FFmpeg\include\libavutil\ripemd.h" />
+    <Content Include="FFmpeg\include\libavutil\samplefmt.h" />
+    <Content Include="FFmpeg\include\libavutil\sha.h" />
+    <Content Include="FFmpeg\include\libavutil\sha512.h" />
+    <Content Include="FFmpeg\include\libavutil\time.h" />
+    <Content Include="FFmpeg\include\libavutil\timecode.h" />
+    <Content Include="FFmpeg\include\libavutil\timestamp.h" />
+    <Content Include="FFmpeg\include\libavutil\version.h" />
+    <Content Include="FFmpeg\include\libavutil\xtea.h" />
+    <Content Include="FFmpeg\include\libpostproc\postprocess.h" />
+    <Content Include="FFmpeg\include\libpostproc\version.h" />
+    <Content Include="FFmpeg\include\libswresample\swresample.h" />
+    <Content Include="FFmpeg\include\libswresample\version.h" />
+    <Content Include="FFmpeg\include\libswscale\swscale.h" />
+    <Content Include="FFmpeg\include\libswscale\version.h" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

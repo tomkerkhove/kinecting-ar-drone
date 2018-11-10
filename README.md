@@ -2,6 +2,8 @@ Kinecting AR Drone
 ===========
 Tutorial on how you can fly your **Parrot AR Drone** by using **Kinect for Windows**. 
 
+> Disclaimer – This application is not finished and needs additional work
+
 ## Prerequisites
 - Parrot AR Drone
 - Kinect for Windows
@@ -9,7 +11,7 @@ Tutorial on how you can fly your **Parrot AR Drone** by using **Kinect for Windo
 - Kinect for Windows SDK v1.8 ([link](http://go.microsoft.com/fwlink/?LinkID=323588 "link"))
 - Microsoft Speech Platform SDK v11 ([link](http://www.microsoft.com/en-us/download/details.aspx?id=27226 "link"))
 
-## What you will learn##
+## What you will learn
 
 ### Part I - Basic UI, Kinect camera & voice recognition ([Code](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Part_I)) 
 In part I we will integrate our Kinect into the template by **visualizing the camera** and setting up our **speech recognition**.
@@ -25,10 +27,10 @@ In part I we will integrate our Kinect into the template by **visualizing the ca
 As you can read in my blog post ([link](http://www.kinectingforwindows.com/2014/08/07/mayday-mayday-ending-the-kinecting-ar-drone-series/)) I didn't had the time to finish this series but I'll open-source the code anyway.
 
 
-#### Application Status ####
+#### Application Status
 Currently you are able to enter your *battle station* as a *Commander* and take-off by using speech commands. In the meanwhile you can monitor the drone & Kinect cameras.
 
-#### Drone Features ####
+#### Drone Features
 These are some of the features we use of the drone.
 
 - Blinking of the LED
@@ -36,14 +38,14 @@ These are some of the features we use of the drone.
 - Use camera
 - Fly around
 
-#### Kinect Features ####
+#### Kinect Features
 This application is based on the following Kinect features
 
 - Camera
 - Skeletal Tracking
 - Speech recognition
 
-#### Flying Gestures ####
+#### Flying Gestures
 Here is the list of gestures that are being used to fly the drone -
 
 - **Fly up** - Move both your hand above your head (25° Angle) 
@@ -62,3 +64,6 @@ In this tutorial we will use a template to avoid spending too much time on the i
 The template contains a basic WPF application where we will **visualize** our **Kinect** *(2)* & **drone** *(4)* cameras as well as the **state** of our **devices**. *(1-3)* In *sector 5* we will **log** some things like our recognized commands, etc.
 
 You can download the template in the [Template-branch](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Template "Template-branch").
+
+## Credits ##
+This application uses the [AR.Drone](https://github.com/Ruslan-B/AR.Drone)-library from [Ruslan Balanukhin](https://twitter.com/rbalanukhin).

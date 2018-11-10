@@ -1,0 +1,6 @@
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\bin\Debug\FFmpeg.AutoGen.dll.config
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\bin\Debug\FFmpeg.AutoGen.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\bin\Debug\FFmpeg.AutoGen.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\obj\Debug\FFmpeg.AutoGen.dll
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\obj\Debug\FFmpeg.AutoGen.pdb
+D:\Source Control\Kinect for Windows\First Generation Kinect\KinectDrone\Part III\K4W.KinectDrone\FFmpeg.AutoGen\obj\Debug\FFmpeg.AutoGen.csprojResolveAssemblyReference.cache

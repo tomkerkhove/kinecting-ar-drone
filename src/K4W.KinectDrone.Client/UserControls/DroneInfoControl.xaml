@@ -1,0 +1,85 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:converters="clr-namespace:K4W.KinectDrone.Client.UserControls.Converters"
+			 xmlns:local="clr-namespace:K4W.KinectDrone.Client.UserControls"
+			 mc:Ignorable="d"
+             x:Class="K4W.KinectDrone.Client.UserControls.DroneInfoControl"
+             DataContext="{Binding Mode=OneWay, RelativeSource={RelativeSource Self}}">
+	<UserControl.Resources>
+		<converters:DroneConnectionToVisibilityConverter x:Key="DroneConnectionToVisibilityConverter"/>
+		<converters:DroneStatusToBrushConverter x:Key="StatusToBrush" />
+        <converters:EnumToStringConverter x:Key="EnumToString" />
+	</UserControl.Resources>
+	<Grid x:Name="LayoutRoot">
+		<StackPanel Orientation="Horizontal">
+			<Ellipse x:Name="StatusVisualisation"
+				Fill="{Binding Connection, Converter={StaticResource StatusToBrush}}"
+				Stroke="Black"
+				Width="16"
+				Height="16" />
+			<Label x:Name="ConnectionLabel"
+				VerticalAlignment="Center"
+				FontSize="16"
+				FontFamily="Open Sans Light" Content="{Binding Connection, Converter={StaticResource EnumToString}}" />
+			<Label x:Name="Seperator"
+				VerticalAlignment="Center"
+				FontSize="21.333"
+				FontFamily="Open Sans Light" Margin="0" Content="-" Visibility="{Binding Connection, Converter={StaticResource DroneConnectionToVisibilityConverter}, Mode=OneWay}" Padding="0,5" />
+			<Label x:Name="StateLabel"
+				VerticalAlignment="Center"
+				FontSize="16"
+				FontFamily="Open Sans Light" Content="{Binding CurrentState, Converter={StaticResource EnumToString}}" Margin="0,0,10,0" Visibility="{Binding Connection, Converter={StaticResource DroneConnectionToVisibilityConverter}, Mode=OneWay}" />
+			<Grid x:Name="BatteryIcon" Width="10" Height="20">
+			<Grid.RowDefinitions>
+    		<RowDefinition Height="45*"/>
+    		<RowDefinition Height="50*"/>
+    		<RowDefinition Height="463*"/>
+    		<RowDefinition Height="50*"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="45*"/>
+    		<ColumnDefinition Width="50*"/>
+    		<ColumnDefinition Width="150*"/>
+    		<ColumnDefinition Width="50*"/>
+    		<ColumnDefinition Width="45*"/>
+    	</Grid.ColumnDefinitions>
+    	<Grid x:Name="BatteryContent" Grid.Column="1" Margin="0" Grid.Row="2" Grid.ColumnSpan="3" Background="White">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="30*"/>
+    			<ColumnDefinition Width="180*"/>
+    			<ColumnDefinition Width="30*"/>
+    		</Grid.ColumnDefinitions>
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="10*"/>
+    			<RowDefinition Height="20*"/>
+    			<RowDefinition Height="10*"/>
+    			<RowDefinition Height="20*"/>
+    			<RowDefinition Height="10*"/>
+    			<RowDefinition Height="20*"/>
+    			<RowDefinition Height="10*"/>
+    		</Grid.RowDefinitions>
+    		<Rectangle x:Name="_100Perc" Margin="0" StrokeThickness="5" Grid.Row="1" Grid.Column="1" Fill="Black"/>
+    		<Rectangle x:Name="_25Perc" Margin="0" Grid.Row="3" StrokeThickness="5" Grid.Column="1" Fill="Black"/>
+    		<Rectangle x:Name="_50Perc" Margin="0" Grid.Row="5" StrokeThickness="5" Grid.Column="1" Fill="Black"/>
+    	</Grid>
+    	<Path x:Name="BatteryBackgroundPath" Grid.ColumnSpan="5" Data="M39.705885,93.75 L39.705885,550.65789 260.29413,550.65789 260.29413,93.75 z M83.823531,0 L216.17647,0 216.17647,44.407895 260.29413,44.407895 300,44.407895 300,93.75 300,550.65789 300,600 260.29413,600 39.705885,600 0,600 0,550.65789 0,93.75 0,44.407895 39.705885,44.407895 83.823531,44.407895 z" Margin="0" Grid.RowSpan="4" Stretch="Fill" Fill="Black"/>	
+			</Grid>
+			<Label x:Name="BatteryLabel"
+				Content="{Binding BatteryLevel}"
+				VerticalAlignment="Center"
+				FontSize="16"
+				FontFamily="Open Sans Light"
+				Margin="0" />
+			<Label
+				VerticalAlignment="Center"
+				FontSize="21.333"
+				FontFamily="Open Sans Light"
+				Margin="0" Content="%" Padding="5" />
+		</StackPanel>
+		<Ellipse x:Name="Effect"
+			Fill="#FFF4F4F5"
+			Height="5" Margin="7.296,22.753,0,18.297" Width="5" HorizontalAlignment="Left" VerticalAlignment="Center" Opacity="0.2" />
+	</Grid>
+</UserControl>
