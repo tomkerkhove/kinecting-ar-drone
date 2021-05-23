@@ -21,11 +21,18 @@ In part I we will integrate our Kinect into the template by **visualizing the ca
 - Visualize the camera
 - Add speech recognition
 
+Here's what the layout of the app looks like:
+
+![App](./media/app-ui.png)
+
+The app is a WPF application that will visualize our Kinect (2) & drone (4) cameras as well as the state of our device. (1-3) In sector 5 we will log some things like our recognized commands, etc.
+
+Learn more about it in the [first blog post](https://web.archive.org/web/20150207042736/http://www.kinectingforwindows.com/2013/12/01/kinecting-ar-drone-pt-i-basic-ui-kinect-camera-voice-recognition/).
+
 ### Mayday, mayday! Ending the Kinecting AR Drone series. ([Code](https://github.com/KinectingForWindows/GIK-KinectingARDrone/tree/Final-Version)) 
 > Disclaimer – This application is not finished and needs additional work
 
-As you can read in my blog post ([link](http://www.kinectingforwindows.com/2014/08/07/mayday-mayday-ending-the-kinecting-ar-drone-series/)) I didn't had the time to finish this series but I'll open-source the code anyway.
-
+As you can read in my blog post ([link](https://web.archive.org/web/20150206044844/http://www.kinectingforwindows.com/2014/08/07/mayday-mayday-ending-the-kinecting-ar-drone-series/)) I didn't had the time to finish this series but I'll open-source the code anyway.
 
 #### Application Status
 Currently you are able to enter your *battle station* as a *Commander* and take-off by using speech commands. In the meanwhile you can monitor the drone & Kinect cameras.
